@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<string.h>
+int hangman(){
+	int i=0;
+	
+	char word[]="elephant";
+	
+	char letter;
+	while(i<9){
+		printf("enter your letter");
+		scanf("%c",&letter);
+		if (strchr(letter, word)!= NULL){
+			
+			printf("correct");
+						
+			
+		}else {
+			printf("wrong");
+			i=i+1;
+	}
+	if (i>9){
+		printf("you lose");
+	}else {
+		printf("you won");
+	}
+	}
+		
